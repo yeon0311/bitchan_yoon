@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>내 미니홈피</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>😊 [홍길동]의 미니홈피</h1>
+    <div id="clock"></div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#profile">프로필</a></li>
+      <li><a href="#diary">다이어리</a></li>
+      <li><a href="#gallery">사진첩</a></li>
+      <li><a href="#guestbook">방명록</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="profile">
+      <h2>👤 프로필</h2>
+      <img src="images/profile.jpg" alt="프로필 이미지" class="profile-img">
+      <p>이름: 홍길동</p>
+      <p>소개: 반가워요! 제 미니홈피에 오신 걸 환영합니다 🌈</p>
+    </section>
+
+    <section id="diary">
+      <h2>📔 다이어리</h2>
+      <p>2025.05.27 - 오늘은 코딩을 배우는 날! 😎</p>
+      <p>2025.05.26 - HTML 너무 재밌어요!!</p>
+    </section>
+
+    <section id="gallery">
+      <h2>📸 사진첩</h2>
+      <img src="images/pic1.jpg" alt="사진1" class="gallery-img">
+      <img src="images/pic2.jpg" alt="사진2" class="gallery-img">
+    </section>
+
+    <section id="guestbook">
+      <h2>📝 방명록</h2>
+      <form id="guestbook-form">
+        <input type="text" id="guest-name" placeholder="이름 입력" required>
+        <textarea id="guest-message" placeholder="방명록 남기기" required></textarea>
+        <button type="submit">작성</button>
+      </form>
+      <div id="guestbook-entries"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 홍길동의 미니홈피</p>
+  </footer>
+</body>
+</html>
